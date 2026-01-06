@@ -12,7 +12,7 @@ import path from "path";
 import os from "os";
 
 const DEVNET_RPC = "https://api.devnet.solana.com";
-const PROGRAM_ID = new PublicKey("AdoejzehfQRcKmgH1S81x2A9y9nG6Hjmq3sH9WfsQ5LF");
+const PROGRAM_ID = new PublicKey("GVajNdhMaLfek7mqbR8iTqGJCAVFcZUBXQkevAdeTq5c");
 
 // Staking config parameters
 const POINTS_PER_STAKE = 1; // 1 point per minute per staked NFT

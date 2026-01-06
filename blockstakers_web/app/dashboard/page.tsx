@@ -298,7 +298,7 @@ export default function DashboardPage() {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold text-blue-600">
-                {config ? `${calculateAPY()}%` : "~18%"}
+                {config ? `${calculateAPY()}%` : "~12%"}
               </div>
               <p className="text-xs text-gray-500">
                 {config?.pointsPerStake || 1} points/NFT/min
@@ -565,7 +565,7 @@ export default function DashboardPage() {
                   <div className="flex justify-between items-center py-2 border-b">
                     <span className="text-gray-500">Estimated APY</span>
                     <span className="font-medium text-green-600">
-                      {config ? `${calculateAPY()}%` : "~18%"}
+                      {config ? `${calculateAPY()}%` : "~12%"}
                     </span>
                   </div>
                   <div className="flex justify-between items-center py-2 border-b">

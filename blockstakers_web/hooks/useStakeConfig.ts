@@ -67,12 +67,12 @@ export const useStakeConfig = () => {
   }, [fetchConfig]);
 
   const calculateAPY = useCallback(() => {
-    if (!config) return 18;
-    const minutesPerYear = 60 * 24 * 365;
-    const pointsPerYear = config.pointsPerStake * minutesPerYear;
-    const rewardsInSOL = pointsPerYear / 10000;
-    const estimatedAPY = rewardsInSOL * 100;
-    return Math.round(estimatedAPY * 10) / 10;
+    if (!config) return 12;
+    // Base APY calculation: more points per minute = higher APY
+    // Using a realistic scale where 1 point/min gives ~12% APY
+    const baseAPY = 12;
+    const apy = baseAPY * config.pointsPerStake;
+    return Math.round(apy * 10) / 10;
   }, [config]);
 
   return {

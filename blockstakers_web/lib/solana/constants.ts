@@ -2,7 +2,7 @@ import { PublicKey } from "@solana/web3.js";
 
 // Program ID from your deployed contract
 export const PROGRAM_ID = new PublicKey(
-  "AdoejzehfQRcKmgH1S81x2A9y9nG6Hjmq3sH9WfsQ5LF"
+  "GVajNdhMaLfek7mqbR8iTqGJCAVFcZUBXQkevAdeTq5c"
 );
 
 // Network configuration
@@ -35,9 +35,9 @@ export const COLLECTION_MINT = new PublicKey(
 
 // Staking configuration defaults (should match your on-chain config)
 export const DEFAULT_CONFIG = {
-  pointsPerStake: 10,
+  pointsPerStake: 1, // 1 point per minute
   maxStake: 100,
-  freezePeriod: 7, // days
+  freezePeriod: 0, // minutes
 };
 
 // Token decimals for reward token
